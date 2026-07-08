@@ -34,14 +34,14 @@
   across every assignment.
 
 ---
-
 ## 📂 Repository Structure
-token-drip/
-├── assignment-1-identity-echo/
-│   └── app.py
-└── README.md
 
-More assignment folders will be added here as new sessions unlock. 🔓
+    token-drip/
+    ├── assignment-1-identity-echo/
+    │   └── app.py
+    └── README.md
+
+More assignment folders will be added here as new sessions unlock🔓
 
 ---
 
