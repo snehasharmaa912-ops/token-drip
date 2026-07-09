@@ -84,13 +84,16 @@
 ## 📂 Repository Structure
 
     token-drip/
-    ├── assignment-1-identity-echo/
-    │   └── app.py
-    ├── assignment-2-upgrading-ai-multiverse/
-    │   └── app.py
-    ├── requirements.txt
-    ├── .gitignore
-    └── README.md
+├── assignment-1-identity-echo/
+│   └── app.py
+├── assignment-2-upgrading-ai-multiverse/
+│   └── app.py
+├── calculator/
+│   ├── app.py
+│   └── requirements.txt
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 More assignment folders will be added here as new sessions unlock. 🔓
 
