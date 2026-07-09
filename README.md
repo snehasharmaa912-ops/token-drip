@@ -2,7 +2,7 @@
 
 # 💧 token-drip
 
-### AI Builder Track — 6 Week Journey
+### AI Builder Track
 
 
 
@@ -17,11 +17,6 @@
 
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)
-
-
-
-
-![Week](https://img.shields.io/badge/Week-2%20of%206-blueviolet?style=for-the-badge)
 
 
 
@@ -101,22 +96,12 @@ More assignment folders will be added here as new sessions unlock. 🔓
 
 ---
 
-## 📝 Assignment Progress
+## 📝 Assignments
 
 | # | Assignment | Highlights | Status |
 |---|------------|-----------|--------|
 | 1 | 🪞 [Identity Echo Interface](./assignment-1-identity-echo) | Multi-input UI · edge-case handling · token cost estimator · word count metric | ✅ Complete |
 | 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics | ✅ Complete |
-| 3 | 🔜 *TBD* | — | ⬜ Upcoming |
-| 4 | 🔜 *TBD* | — | ⬜ Upcoming |
-| 5 | 🔜 *TBD* | — | ⬜ Upcoming |
-| 6 | 🔜 *TBD* | — | ⬜ Upcoming |
-
-<div align="center">
-
-**Progress:** ▓▓▓▓░░░░░░ 2 / 6 assignments
-
-</div>
 
 ---
 
