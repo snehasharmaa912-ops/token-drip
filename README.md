@@ -11,7 +11,9 @@
 
 
 
+
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
 
 
 
@@ -53,7 +55,9 @@
 
 
 
+
 ![Gemini](https://img.shields.io/badge/-Gemini%20API-8E75B2?style=flat-square&logo=google&logoColor=white)
+
 
 
 
@@ -63,12 +67,15 @@
 
 
 
+
 ![Copilot](https://img.shields.io/badge/-GitHub%20Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 
 
 
 
+
 ![Cursor](https://img.shields.io/badge/-Cursor-000000?style=flat-square)
+
 
 
 
@@ -82,8 +89,7 @@
 ---
 
 ## 📂 Repository Structure
-
-    token-drip/
+token-drip/
 ├── assignment-1-identity-echo/
 │   └── app.py
 ├── assignment-2-upgrading-ai-multiverse/
@@ -105,6 +111,7 @@ More assignment folders will be added here as new sessions unlock. 🔓
 |---|------------|-----------|--------|
 | 1 | 🪞 [Identity Echo Interface](./assignment-1-identity-echo) | Multi-input UI · edge-case handling · token cost estimator · word count metric | ✅ Complete |
 | 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics | ✅ Complete |
+| 3 | 🧮 [NeoCalc — Advanced Calculator](./calculator) | Glassmorphism UI · scientific mode · animated gradients · calculation history | ✅ Complete |
 
 ---
 
