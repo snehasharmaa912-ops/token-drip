@@ -21,7 +21,7 @@
 
 
 
-![Week](https://img.shields.io/badge/Week-1%20of%206-blueviolet?style=for-the-badge)
+![Week](https://img.shields.io/badge/Week-2%20of%206-blueviolet?style=for-the-badge)
 
 
 
@@ -58,6 +58,11 @@
 
 
 
+![Gemini](https://img.shields.io/badge/-Gemini%20API-8E75B2?style=flat-square&logo=google&logoColor=white)
+
+
+
+
 ![Gradio](https://img.shields.io/badge/-Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
 
 
@@ -77,16 +82,6 @@
 
 
 
-
-![Canva](https://img.shields.io/badge/-Canva%20AI-00C4CC?style=flat-square&logo=canva&logoColor=white)
-
-
-
-
-![Gamma](https://img.shields.io/badge/-Gamma-000000?style=flat-square)
-
-
-
 </div>
 
 ---
@@ -96,6 +91,10 @@
     token-drip/
     ├── assignment-1-identity-echo/
     │   └── app.py
+    ├── assignment-2-upgrading-ai-multiverse/
+    │   └── app.py
+    ├── requirements.txt
+    ├── .gitignore
     └── README.md
 
 More assignment folders will be added here as new sessions unlock. 🔓
@@ -107,7 +106,7 @@ More assignment folders will be added here as new sessions unlock. 🔓
 | # | Assignment | Highlights | Status |
 |---|------------|-----------|--------|
 | 1 | 🪞 [Identity Echo Interface](./assignment-1-identity-echo) | Multi-input UI · edge-case handling · token cost estimator · word count metric | ✅ Complete |
-| 2 | 🔜 *TBD* | — | ⬜ Upcoming |
+| 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics | ✅ Complete |
 | 3 | 🔜 *TBD* | — | ⬜ Upcoming |
 | 4 | 🔜 *TBD* | — | ⬜ Upcoming |
 | 5 | 🔜 *TBD* | — | ⬜ Upcoming |
@@ -115,7 +114,7 @@ More assignment folders will be added here as new sessions unlock. 🔓
 
 <div align="center">
 
-**Progress:** ▓▓░░░░░░░░ 1 / 6 assignments
+**Progress:** ▓▓▓▓░░░░░░ 2 / 6 assignments
 
 </div>
 
