@@ -79,7 +79,7 @@ if user_message := st.chat_input("Say something..."):
     with st.chat_message("assistant"):
         with st.spinner("Connecting to the multiverse... 🌀"):
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-flash-latest",
                 contents=ai_instructions
             )
             st.write(response.text)
