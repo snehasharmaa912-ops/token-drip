@@ -11,9 +11,7 @@
 
 
 
-
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
 
 
 
@@ -55,9 +53,7 @@
 
 
 
-
 ![Gemini](https://img.shields.io/badge/-Gemini%20API-8E75B2?style=flat-square&logo=google&logoColor=white)
-
 
 
 
@@ -67,15 +63,12 @@
 
 
 
-
 ![Copilot](https://img.shields.io/badge/-GitHub%20Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)
 
 
 
 
-
 ![Cursor](https://img.shields.io/badge/-Cursor-000000?style=flat-square)
-
 
 
 
@@ -89,17 +82,18 @@
 ---
 
 ## 📂 Repository Structure
-token-drip/
-├── assignment-1-identity-echo/
-│   └── app.py
-├── assignment-2-upgrading-ai-multiverse/
-│   └── app.py
-├── calculator/
-│   ├── app.py
-│   └── requirements.txt
-├── requirements.txt
-├── .gitignore
-└── README.md
+
+    token-drip/
+    ├── assignment-1-identity-echo/
+    │   └── app.py
+    ├── assignment-2-upgrading-ai-multiverse/
+    │   └── app.py
+    ├── calculator/
+    │   ├── app.py
+    │   └── requirements.txt
+    ├── requirements.txt
+    ├── .gitignore
+    └── README.md
 
 More assignment folders will be added here as new sessions unlock. 🔓
 
@@ -110,8 +104,9 @@ More assignment folders will be added here as new sessions unlock. 🔓
 | # | Assignment | Highlights | Status |
 |---|------------|-----------|--------|
 | 1 | 🪞 [Identity Echo Interface](./assignment-1-identity-echo) | Multi-input UI · edge-case handling · token cost estimator · word count metric | ✅ Complete |
-| 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics | ✅ Complete |
+| 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics · now stateful with chat memory | ✅ Complete |
 | 3 | 🧮 [NeoCalc — Advanced Calculator](./calculator) | Glassmorphism UI · scientific mode · animated gradients · calculation history | ✅ Complete |
+| 4 | 🧠 [The Memory Vault](./assignment-2-upgrading-ai-multiverse) | Stateful chat UI · `st.session_state` · chat history persistence · walrus operator input | ✅ Complete |
 
 ---
 
