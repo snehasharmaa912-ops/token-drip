@@ -19,17 +19,24 @@ st.set_page_config(
 )
 
 # ----------------------------------------------------------------------
-# Task 1: The UI Shell
+# Task 1: Initialize the Memory Vault
+# ----------------------------------------------------------------------
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# ----------------------------------------------------------------------
+# The UI Shell
 # ----------------------------------------------------------------------
 st.title("🌀 The Multiverse of Chatbots")
 st.write(
     "Pick a personality, send a message, and get a response straight "
-    "from that character's universe."
+    "from that character's universe. This chatbot now remembers your "
+    "conversation. 🧠"
 )
 st.divider()
 
 # ----------------------------------------------------------------------
-# Task 2: Persona Selection
+# Persona Selection
 # ----------------------------------------------------------------------
 PERSONAS = [
     "An expert Hacker",
@@ -45,51 +52,37 @@ with col1:
 with col2:
     personality = st.selectbox("Who do you want to talk to?", PERSONAS, label_visibility="collapsed")
 
-# ----------------------------------------------------------------------
-# Task 3: Message Input
-# ----------------------------------------------------------------------
-user_message = st.text_input("💬 Your message", placeholder="Type something to send into the multiverse...")
-
-# ----------------------------------------------------------------------
-# Task 4: The Action Gate
-# ----------------------------------------------------------------------
-send = st.button("🚀 SEND", use_container_width=True)
-
 st.divider()
 
 # ----------------------------------------------------------------------
-# Task 5: Conditional Routing + AI Response
+# Task 2: Render the Chat History
 # ----------------------------------------------------------------------
-if send:
-    # Strip whitespace so entries like "   " don't count as valid input
-    clean_message = user_message.strip()
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
 
-    if clean_message == "":
-        st.warning("⚠️ Please type a message before sending.")
-    else:
-        # Build the persona-aware prompt for the model
-        ai_instructions = (
-            f"You are acting as {personality}. "
-            f"Respond to this message in character: {clean_message}"
-        )
+# ----------------------------------------------------------------------
+# Task 3 & 4: Chat Input, Memory Saving, and AI Response
+# ----------------------------------------------------------------------
+if user_message := st.chat_input("Say something..."):
+    # Save and display the user's message immediately
+    st.session_state.messages.append({"role": "user", "content": user_message})
+    with st.chat_message("user"):
+        st.write(user_message)
 
+    # Build the persona-aware prompt for the model
+    ai_instructions = (
+        f"You are acting as {personality}. "
+        f"Respond to this message in character: {user_message}"
+    )
+
+    with st.chat_message("assistant"):
         with st.spinner("Connecting to the multiverse... 🌀"):
             response = client.models.generate_content(
                 model="gemini-2.5-flash",
                 contents=ai_instructions
             )
+            st.write(response.text)
 
-        # Success case — display the AI's in-character response
-        st.success("✅ Message received!")
-        st.markdown(f"**{personality} says:**")
-        st.info(response.text)
-
-        # Extra detail panel with computed metrics
-        char_count = len(clean_message)
-        token_count = char_count // 4
-
-        with st.expander("🔍 View transmission details"):
-            m1, m2, m3 = st.columns(3)
-            m1.metric("Persona", personality.split()[0])
-            m2.metric("Character Count", char_count)
-            m3.metric("Estimated Tokens", token_count)
+    # Save the AI's response to the vault
+    st.session_state.messages.append({"role": "assistant", "content": response.text})
