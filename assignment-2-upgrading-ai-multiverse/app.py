@@ -70,10 +70,15 @@ if user_message := st.chat_input("Say something..."):
     with st.chat_message("user"):
         st.write(user_message)
 
-    # Build the persona-aware prompt for the model
+    # Build the full conversation history as context for the model
+    conversation_history = "\n".join(
+        f"{msg['role']}: {msg['content']}" for msg in st.session_state.messages
+    )
+
     ai_instructions = (
-        f"You are acting as {personality}. "
-        f"Respond to this message in character: {user_message}"
+        f"You are acting as {personality}. Stay in character. "
+        f"Here is the full conversation so far:\n{conversation_history}\n\n"
+        f"Respond to the latest user message in character."
     )
 
     with st.chat_message("assistant"):
