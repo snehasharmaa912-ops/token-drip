@@ -107,6 +107,7 @@ More assignment folders will be added here as new sessions unlock. 🔓
 | 2 | 🌀 [Upgrading the AI Multiverse](./assignment-2-upgrading-ai-multiverse) | Persona-based AI chatbot · Gemini API integration · dynamic prompting · token metrics · now stateful with chat memory | ✅ Complete |
 | 3 | 🧮 [NeoCalc — Advanced Calculator](./calculator) | Glassmorphism UI · scientific mode · animated gradients · calculation history | ✅ Complete |
 | 4 | 🧠 [The Memory Vault](./assignment-2-upgrading-ai-multiverse) | Stateful chat UI · `st.session_state` · chat history persistence · walrus operator input | ✅ Complete |
+| 5 | 🎨 [AI Image Studio](./assignment-4-ai-image-studio) | Fixed width/height URL params · dynamic PNG downloads · Magic Enhance toggle · Surprise Me randomizer | ✅ Complete |
 
 ---
 
