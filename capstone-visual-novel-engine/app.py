@@ -1,11 +1,3 @@
-"""
-Visual Novel Engine - MirAI "AI Builder" Track Capstone
-A choose-your-own-adventure engine that orchestrates three pipelines:
-  - Gemini (stateful structured-JSON story generation)
-  - Pollinations (scene art generation)
-  - gTTS (narration audio)
-"""
-
 import streamlit as st
 import os
 import json
